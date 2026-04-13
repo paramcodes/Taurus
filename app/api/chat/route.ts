@@ -18,9 +18,6 @@ export async function POST(request:Request) {
     },
   });
   return NextResponse.json({
-    reply:response.text,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-    }
+    reply:response.text
   })
 }
